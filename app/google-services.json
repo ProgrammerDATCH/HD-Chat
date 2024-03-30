@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217947092608",
+    "project_id": "hd-chat-tsap",
+    "storage_bucket": "hd-chat-tsap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217947092608:android:a1c74ed368982f78fc1865",
+        "android_client_info": {
+          "package_name": "com.programmerdatch.hdchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217947092608-agb7guvkt77n38orfvrsp8v7i3tlbls3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeUs_KqBQdnVlb4wV-JtnLYDF9HrUtQnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217947092608-agb7guvkt77n38orfvrsp8v7i3tlbls3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CallsFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/profile_image"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/avatar"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/plus"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-25dp"
+                    app:srcCompat = "@drawable/plus"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="UserName : "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtUsername"
+                        android:hint="Enter Your name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="#373333"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="About : "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etStatus"
+                        android:hint="Explain yourself"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="#373333"/>
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btn_bg"
+                    android:padding="5dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:id="@+id/saveButton"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/linear"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/linear_half_top_bg"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/privacyText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/privacy"
+                    android:padding="10dp"
+                    android:drawablePadding="21dp"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/about"
+                    android:padding="10dp"
+                    android:drawablePadding="26.5dp"
+                    android:text="About Us"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inviteText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/invite"
+                    android:padding="10dp"
+                    android:drawablePadding="25dp"
+                    android:text="Invite a Friend"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notificationText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/notification"
+                    android:padding="10dp"
+                    android:drawablePadding="20dp"
+                    android:text="Notification"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/helpText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/help"
+                    android:padding="10dp"
+                    android:drawablePadding="26.5dp"
+                    android:text="Help"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/logoutText"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/logout_icon"
+                    android:padding="10dp"
+                    android:drawablePadding="26.5dp"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
